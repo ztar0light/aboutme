@@ -27,7 +27,7 @@
 
     a:hover,
     a:active {
-        color: black; /* Change text color on hover */
+        color: white; /* Change text color on hover */
         text-decoration: underline;
     }
 
@@ -54,7 +54,6 @@
         left: 20px;
         font-size: 20px; /* Increase font size of the back button */
         z-index: 1; /* Ensure button appears above content */
-        color: white; /* Initial text color */
     }
 
     /* Style invisible rectangle around back button */
@@ -112,20 +111,19 @@
     /* Style the title */
     .title {
         margin-bottom: 20px; /* Add margin bottom for title */
+        font-size: 24px; /* Increase font size for title */
     }
 
     /* Style the text inside the rounded rectangle */
     .rectangleText {
         line-height: 1.5; /* Adjust line height for better spacing */
+        font-size: 14px; /* Decrease font size for text inside rectangle */
     }
 
     /* Style the sections */
-    .aboutMeSection {
-        margin-top: 40px; /* Add margin-top for the about me section */
-    }
-
+    .aboutMeSection,
     .workingOnSection {
-        margin-top: 40px; /* Add margin-top for the working on section */
+        margin-top: 20px; /* Add margin-top for the sections */
     }
 
     /* Style horizontal lines */
@@ -133,6 +131,18 @@
         width: 100%;
         border-top: 1px solid #666;
         margin: 20px 0;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 600px) {
+        /* Adjust font sizes and other dimensions for smaller screens */
+        .title {
+            font-size: 20px; /* Decrease font size for title */
+        }
+
+        .rectangleText {
+            font-size: 12px; /* Further decrease font size for text inside rectangle */
+        }
     }
 </style>
 </head>
