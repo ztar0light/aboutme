@@ -1,59 +1,162 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ztarlight's Page</title>
 <style>
-    #grad1 {
-        height: 696px;
+    /* Apply gradient background */
+    body {
+        margin: 0;
+        padding: 0;
         background-color: black;
         background-image: linear-gradient(to top, navy, black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; /* Ensure content spans full page vertically */
+        display: flex;
+        flex-direction: column;
     }
-    a:link {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-    }
-
+    
+    /* Style links */
+    a:link,
     a:visited {
-        color: grey;
-        background-color: transparent;
+        color: white;
         text-decoration: none;
     }
 
-    a:hover {
-        color: black;
-        background-color: transparent;
+    a:hover,
+    a:active {
+        color: black; /* Change text color on hover */
         text-decoration: underline;
     }
 
-    a:active {
-        color: deeppink;
-        background-color: transparent;
-        text-decoration: underline;
+    /* Style content container */
+    #contentContainer {
+        text-align: center;
+        padding: 20px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: verdana;
+        max-width: 800px;
+        margin: auto;
+        flex: 1; /* Ensure content takes remaining vertical space */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Style the back button */
+    #backButton {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 20px; /* Increase font size of the back button */
+        z-index: 1; /* Ensure button appears above content */
+        color: white; /* Initial text color */
+    }
+
+    /* Style invisible rectangle around back button */
+    #backButtonContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px; /* Width of the back button */
+        height: 60px; /* Height of the back button */
+        cursor: pointer; /* Change cursor on hover */
+        z-index: 1; /* Ensure it's above other content */
+        background-color: black; /* Initial background color */
+        opacity: 0; /* Initially invisible */
+    }
+
+    #backButtonContainer:hover {
+        background-color: white; /* Change background color on hover */
+        opacity: 0.1; /* Add transparency on hover */
+    }
+
+    /* Style footer */
+    #footer {
+        position: absolute;
+        bottom: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        z-index: 1; /* Ensure footer appears above content */
+    }
+
+    /* Adjust sections positioning */
+    .section {
+        padding-top: 20px; /* Adjusted padding-top */
+        padding-bottom: 20px; /* Add bottom padding */
+        margin-bottom: 20px; /* Add margin between sections */
+    }
+
+    /* Rounded rectangle styling */
+    .roundedRect {
+        background-color: #333; /* Darker grey */
+        border-radius: 20px; /* Adjust the radius as needed */
+        overflow: hidden; /* Ensure content inside is clipped to rounded shape */
+        width: 90%; /* Set width to 90% of viewport width */
+        max-height: 90vh; /* Set max height to 90% of viewport height */
+        padding: 20px; /* Add padding to the rounded rectangle */
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); /* Add an outline */
+        margin-top: 5vh; /* Leave 5% of viewport height at the top */
+        margin-bottom: 5vh; /* Leave 5% of viewport height at the bottom */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Style the title */
+    .title {
+        margin-bottom: 20px; /* Add margin bottom for title */
+    }
+
+    /* Style the text inside the rounded rectangle */
+    .rectangleText {
+        line-height: 1.5; /* Adjust line height for better spacing */
+    }
+
+    /* Style the sections */
+    .aboutMeSection {
+        margin-top: 40px; /* Add margin-top for the about me section */
+    }
+
+    .workingOnSection {
+        margin-top: 40px; /* Add margin-top for the working on section */
+    }
+
+    /* Style horizontal lines */
+    .line {
+        width: 100%;
+        border-top: 1px solid #666;
+        margin: 20px 0;
     }
 </style>
-<div id="grad1" style="text-align: center; margin: -8px; color: #FFFFFF; font-size: 16px; font-weight: bold; font-family: verdana;">
-    <!-- <br> -->
-    <h2 style="color-rendering: #FFFFFF; font-size: 16px; font-family: verdana; text-align: left;"><a href="https://www.google.com/">Back</a></h2>
-    <hr>
-    <hr>
-    <br>
-    <h1>
-        Hey, I'm Ztarlight
-    </h1>
-    <body>
-        <h2>About me</h2>
-        <p>
-            I am a gamer who DO touch grass.
-        </p>
-        <br><br><br><br><br><br>
-        <h2>What I'm working on</h2>
-        <p>
-            I'm working on this website rn.
-        </p>
-        <br><br><br><br><br><br><br><br>
-        <hr>
-        <hr>
-        </p>
-        if there any weird thing going on this page then is is a WIP.
-        </p>
-    </body>
+</head>
+<body>
+<div id="backButtonContainer"></div>
+<a id="backButton" href="https://www.google.com/">Back</a>
+<div id="contentContainer">
+    <div class="roundedRect">
+        <div class="title">
+            <h1>Hey, I'm Ztarlight</h1>
+        </div>
+        <div class="section aboutMeSection">
+            <h2>About me</h2>
+            <p class="rectangleText">I am a gamer who does touch grass.</p>
+        </div>
+        <div class="line"></div> <!-- Horizontal line -->
+        <div class="section workingOnSection">
+            <h2>What I'm working on</h2>
+            <p class="rectangleText">I'm working on this website right now.</p>
+        </div>
+    </div>
 </div>
+<div id="footer">
+    <p>This page is a work in progress.</p>
+</div>
+</body>
 </html>
