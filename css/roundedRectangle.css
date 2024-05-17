@@ -11,6 +11,8 @@
     align-items: center;
     position: relative;
     margin-bottom: 20px;
+    height: auto; /* Set height to auto */
+    min-height: max-content; /* Adjust min-height based on content */
 }
 
     .roundedRect::before {
