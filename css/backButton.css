@@ -1,7 +1,7 @@
 #backButton {
     position: absolute;
-    top: 0px;
-    left: 20px;
+    top: 5px;
+    left: 25px;
     font-size: 20px;
     z-index: 1;
     cursor: pointer;
