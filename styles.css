@@ -66,9 +66,9 @@ a:hover, a:active {
     background-color: #333; /* Darker grey */
     border-radius: 15px; /* Rounded corners */
     overflow: hidden;
-    width: 45%; /* Adjusted width */
+    width: 80%; /* Adjusted width */
     max-width: 800px; /* Added maximum width */
-    padding: 0px; /* Added padding */
+    padding: 20px; /* Added padding */
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); /* Add an outline */
     display: flex;
     flex-direction: column;
@@ -145,7 +145,8 @@ a:hover, a:active {
         font-size: 12px; /* Decrease font size for text */
     }
 
-    .line {
-        margin: 10px 0; /* Decrease margin for horizontal line */
+    .roundedRect {
+        width: 90%; /* Adjusted width for rounded rectangle */
+        padding: 10px; /* Adjusted padding for rounded rectangle */
     }
 }
