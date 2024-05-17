@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ztarlight's Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Link to separate CSS files -->
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/backButton.css">
+    <link rel="stylesheet" type="text/css" href="css/backButtonContainer.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <link rel="stylesheet" type="text/css" href="css/roundedRectangle.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="stylesheet" type="text/css" href="css/textInsideRectangle.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+</head>
+<body>
+    <div id="backButtonContainer">
+        <a id="backButton" href="#">Back</a>
+    </div>
+    <div id="contentContainer">
+        <div class="roundedRect">
+            <div id="banner1"></div>
+            <div id="title">
+                <h1>Hey, I'm Ztarlight</h1>
+            </div>
+            <div class="section aboutMeSection">
+                <h2>About me</h2>
+                <p class="rectangleText">I am a gamer who does touch grass.</p>
+            </div>
+            <div class="line"></div> <!-- Horizontal line -->
+            <div class="section workingOnSection">
+                <h2>What I'm working on</h2>
+                <p class="rectangleText">I'm working on this website right now.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>This page is a work in progress.</p>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+        function handleBackButtonClick(event) {
+            event.preventDefault(); // Prevent default behavior of link
+            var newTab = window.open('about:blank', '_blank'); // Open default browser page in new tab
+            window.close(); // Close the current tab
+        }
+
+        document.getElementById("backButtonContainer").addEventListener("click", handleBackButtonClick);
+    </script>
+</body>
+</html>
