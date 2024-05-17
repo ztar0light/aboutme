@@ -35,10 +35,10 @@ a:hover, a:active {
     opacity: 0; /* Initially invisible */
 }
 
-    #backButtonContainer:hover {
-        background-color: white; /* Change background color on hover */
-        opacity: 0.5; /* Add transparency on hover */
-    }
+#backButtonContainer:hover {
+    background-color: white; /* Change background color on hover */
+    opacity: 0.5; /* Add transparency on hover */
+}
 
 #backButton {
     position: absolute;
@@ -128,4 +128,24 @@ a:hover, a:active {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     z-index: 1; /* Ensure above other content */
+}
+
+/* Media Query for smaller screens */
+@media screen and (orientation: portrait) {
+    /* Adjust font sizes and other dimensions for vertical orientation */
+    #backButton {
+        font-size: 16px; /* Decrease font size for back button */
+    }
+
+    #title {
+        font-size: 20px; /* Decrease font size for title */
+    }
+
+    #rectangleText {
+        font-size: 12px; /* Decrease font size for text */
+    }
+
+    .line {
+        margin: 10px 0; /* Decrease margin for horizontal line */
+    }
 }
