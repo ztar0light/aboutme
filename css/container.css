@@ -1,0 +1,8 @@
+/* container.css */
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow outline */
+    word-wrap: break-word; /* Automatically start a new line when text is too long */
+}
