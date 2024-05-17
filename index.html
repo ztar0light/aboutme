@@ -5,171 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ztarlight's Page</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        /* Apply gradient background */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            background-image: linear-gradient(to top, navy, black);
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 100vh; /* Ensure content spans full page vertically */
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Style links */
-        a:link,
-        a:visited {
-            color: white;
-            text-decoration: none;
-        }
-
-        a:hover,
-        a:active {
-            color: white; /* Change text color on hover */
-            text-decoration: underline;
-        }
-
-        /* Style content container */
-        #contentContainer {
-            text-align: center;
-            padding: 20px;
-            color: #FFFFFF;
-            font-size: 16px;
-            font-family: verdana;
-            max-width: 800px;
-            margin: auto; 
-            margin-top: 0vh; /* Leave 0% of viewport height at the top */
-            flex: 1; /* Ensure content takes remaining vertical space */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Style the back button */
-        #backButton {
-            position: absolute;
-            top: 0px;
-            left: 20px;
-            font-size: 20px; /* Increase font size of the back button */
-            z-index: 1; /* Ensure button appears above content */
-        }
-
-        /* Style invisible rectangle around back button */
-        #backButtonContainer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 80px; /* Width of the back button */
-            height: 30px; /* Height of the back button */
-            cursor: pointer; /* Change cursor on hover */
-            z-index: 1; /* Ensure it's above other content */
-            background-color: black; /* Initial background color */
-            opacity: 0; /* Initially invisible */
-        }
-
-            #backButtonContainer:hover {
-                background-color: white; /* Change background color on hover */
-                opacity: 0.5; /* Add transparency on hover */
-            }
-
-        /* Style footer */
-        #footer {
-            position: absolute;
-            bottom: 5px; /* Adjust as needed */
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            z-index: 1; /* Ensure footer appears above content */
-        }
-
-        /* Adjust sections positioning */
-        .section {
-            padding-top: 5px; /* Adjusted padding-top */
-            padding-bottom: 20px; /* Add bottom padding */
-            margin-bottom: 20px; /* Add margin between sections */
-        }
-
-        /* Rounded rectangle styling */
-        .roundedRect {
-            background-color: #333; /* Darker grey */
-            border-radius: 15px; /* Adjust the radius as needed */
-            overflow: hidden; /* Ensure content inside is clipped to rounded shape */
-            width: 65%; /* Set width to 65% of viewport width */
-            max-height: 95vh; /* Set max height to 95% of viewport height */
-            padding: 10px; /* Add padding to the rounded rectangle */
-            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); /* Add an outline */
-            margin-top: 0vh; /* Leave 0% of viewport height at the top */
-            margin-bottom: 0vh; /* Leave 0% of viewport height at the bottom */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Style the title */
-        .title {
-            margin-top: -30px; /* Make the title higher by 30px */
-            margin-bottom: 20px; /* Add margin bottom for title */
-            font-size: 24px; /* Increase font size for title */
-        }
-
-        /* Style the text inside the rounded rectangle */
-        .rectangleText {
-            line-height: 1.5; /* Adjust line height for better spacing */
-            font-size: 14px; /* Decrease font size for text inside rectangle */
-        }
-
-        /* Style the sections */
-        .aboutMeSection,
-        .workingOnSection {
-            margin-top: 20px; /* Add margin-top for the sections */
-        }
-
-        /* Style horizontal lines */
-        .line {
-            width: 100%;
-            border-top: 1px solid #666;
-            margin: 20px 0;
-        }
-
-        /* Media query for smaller screens */
-        @media screen and (max-width: 600px) {
-            /* Adjust font sizes and other dimensions for smaller screens */
-            .title {
-                font-size: 20px; /* Decrease font size for title */
-            }
-
-            .rectangleText {
-                font-size: 12px; /* Further decrease font size for text inside rectangle */
-            }
-
-            /* Adjust heading sizes for smaller screens */
-            h1, h2 {
-                font-size: 18px; /* Decrease heading sizes for smaller screens */
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div id="backButtonContainer"></div>
     <a id="backButton" href="https://www.google.com/">Back</a>
     <div id="contentContainer">
         <div class="roundedRect">
-            <div class="title">
+            <div id="banner1"></div>
+            <div id="title">
                 <h1>Hey, I'm Ztarlight</h1>
             </div>
-            <div class="section aboutMeSection">
+            <div class="section" id="aboutMeSection">
                 <h2>About me</h2>
-                <p class="rectangleText">I am a gamer who does touch grass.</p>
+                <p id="rectangleText">I am a gamer who does touch grass.</p>
             </div>
             <div class="line"></div> <!-- Horizontal line -->
-            <div class="section workingOnSection">
+            <div class="section" id="workingOnSection">
                 <h2>What I'm working on</h2>
-                <p class="rectangleText">I'm working on this website right now.</p>
+                <p id="rectangleText">I'm working on this website right now.</p>
             </div>
         </div>
     </div>
