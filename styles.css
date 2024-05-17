@@ -35,10 +35,10 @@ a:hover, a:active {
     opacity: 0; /* Initially invisible */
 }
 
-#backButtonContainer:hover {
-    background-color: white; /* Change background color on hover */
-    opacity: 0.5; /* Add transparency on hover */
-}
+    #backButtonContainer:hover {
+        background-color: white; /* Change background color on hover */
+        opacity: 0.5; /* Add transparency on hover */
+    }
 
 #backButton {
     position: absolute;
@@ -66,9 +66,9 @@ a:hover, a:active {
     background-color: #333; /* Darker grey */
     border-radius: 15px; /* Rounded corners */
     overflow: hidden;
-    width: 50%; /* Adjusted width */
-    max-width: 800px; /* Added maximum width */
-    padding: 15px; /* Adjusted padding */
+    width: 90%; /* Adjusted width */
+    max-width: 80vh; /* Added maximum width */
+    padding: 10px; /* Adjusted padding */
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); /* Add an outline */
     display: flex;
     flex-direction: column;
@@ -146,7 +146,7 @@ a:hover, a:active {
     }
 
     .roundedRect {
-        width: 75%; /* Adjusted width for rounded rectangle */
-        padding: 5px; /* Adjusted padding for rounded rectangle */
+        width: 90%; /* Adjusted width for rounded rectangle */
+        padding: 10px; /* Adjusted padding for rounded rectangle */
     }
 }
