@@ -66,9 +66,9 @@ a:hover, a:active {
     background-color: #333; /* Darker grey */
     border-radius: 15px; /* Rounded corners */
     overflow: hidden;
-    width: 65%; /* Adjusted width */
+    width: 45%; /* Adjusted width */
     max-width: 800px; /* Added maximum width */
-    padding: 20px; /* Added padding */
+    padding: 0px; /* Added padding */
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); /* Add an outline */
     display: flex;
     flex-direction: column;
