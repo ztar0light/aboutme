@@ -14,7 +14,7 @@ body {
 body {
     margin: 0;
     padding: 0;
-    background-color: #6e7b8b; /* Solid dull blue background color */
+    background-color: #536d84; /* Solid dull blue background color */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
