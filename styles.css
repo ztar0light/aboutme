@@ -42,7 +42,7 @@ a:hover, a:active {
 
 #backButton {
     position: absolute;
-    top: 10px; /* Adjust vertical position */
+    top: 0px; /* Adjust vertical position */
     left: 20px; /* Adjust horizontal position */
     font-size: 20px; /* Button font size */
     z-index: 1; /* Ensure above other content */
@@ -67,7 +67,7 @@ a:hover, a:active {
     border-radius: 15px; /* Rounded corners */
     overflow: hidden;
     width: 90%; /* Adjusted width */
-    max-width: 80vh; /* Added maximum width */
+    max-width: 75vh; /* Added maximum width */
     padding: 10px; /* Adjusted padding */
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); /* Add an outline */
     display: flex;
@@ -81,7 +81,7 @@ a:hover, a:active {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to top, #FFA500, #FFA500); /* Orange gradient */
-    height: 30px; /* Adjusted height */
+    height: 60px; /* Adjusted height */
     width: 100%; /* Conform to the width of the parent container */
     position: absolute; /* Position relative to the parent */
     top: 0; /* Align to the top of the container */
