@@ -12,7 +12,7 @@
 
     #backButtonContainer:hover,
     #backButtonContainer:hover #backButton {
-        background-color: white;
+        background-color: black;
         opacity: 0.5;
         color: black;
     }
