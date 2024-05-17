@@ -1,0 +1,13 @@
+.section {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.line {
+    width: 100%;
+    border-top: 1px solid #666;
+    margin: 20px 0;
+}
