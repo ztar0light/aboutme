@@ -35,10 +35,10 @@ a:hover, a:active {
     opacity: 0; /* Initially invisible */
 }
 
-#backButtonContainer:hover {
-    background-color: white; /* Change background color on hover */
-    opacity: 0.5; /* Add transparency on hover */
-}
+    #backButtonContainer:hover {
+        background-color: white; /* Change background color on hover */
+        opacity: 0.5; /* Add transparency on hover */
+    }
 
 #backButton {
     position: absolute;
@@ -104,7 +104,7 @@ a:hover, a:active {
 #rectangleText {
     line-height: 1.5; /* Adjust line height */
     font-size: 14px; /* Decrease font size */
-    padding: 20px; /* Add padding */
+    padding: 5px; /* Add padding */
 }
 
 /* Section Styles */
