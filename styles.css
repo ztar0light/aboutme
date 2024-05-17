@@ -146,7 +146,7 @@ a:hover, a:active {
     }
 
     .roundedRect {
-        width: 90%; /* Adjusted width for rounded rectangle */
-        padding: 10px; /* Adjusted padding for rounded rectangle */
+        width: 65%; /* Adjusted width for rounded rectangle */
+        padding: 5px; /* Adjusted padding for rounded rectangle */
     }
 }
