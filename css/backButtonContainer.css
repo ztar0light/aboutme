@@ -16,7 +16,7 @@
         opacity: 0.5;
         color: black;
     }
-*/
+
 #backButtonContainer {
     position: absolute;
     top: 5;
@@ -28,3 +28,29 @@
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
     border-radius: 15px; /* Rounded corners */
 }
+*/
+#backButtonContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: black;
+    opacity: 0;
+}
+
+#backButtonContainer:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+
+#backButton {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 20px;
+    z-index: 2; /* Ensure button appears above content */
+}
+
