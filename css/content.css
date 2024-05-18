@@ -1,6 +1,6 @@
 #contentContainer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #FFFFFF;
     font-size: 16px;
     font-family: Verdana;
@@ -15,13 +15,14 @@
 }
 #liContainer {
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     color: #FFFFFF;
     font-size: 16px;
     font-family: Verdana;
     max-width: 800px;
     margin: auto;
-    margin-top: 0vh;
+    margin-top: 5px;
+    left: 5px;
     flex: 1;
     display: flex;
     flex-direction: column;
