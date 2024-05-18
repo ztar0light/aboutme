@@ -45,12 +45,3 @@
     background-color: white;
     opacity: 0.5;
 }
-
-#backButton {
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    font-size: 20px;
-    z-index: 2; /* Ensure button appears above content */
-}
-
