@@ -1,0 +1,24 @@
+/* Include backButton and container styles */
+@import url('backButton.css');
+@import url('container.css');
+
+body {
+    background-color: #4a5d73; /* Dull blue background */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}

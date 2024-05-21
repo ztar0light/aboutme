@@ -1,0 +1,8 @@
+#banner1 {
+    height: 40px;
+    width: 100%;
+    background-image: linear-gradient(to top, #FFA500, #FFA500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

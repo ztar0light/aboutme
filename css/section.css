@@ -1,0 +1,25 @@
+.section {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.line {
+    width: 100%;
+    border-top: 1px solid #666;
+    margin: 20px 0;
+}
+
+.halfOpaque {
+    font-size: 14px;
+    color: white;
+    opacity: 0.5;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #444;
+    text-align: center;
+    z-index: 3; /* Ensures the text is on top */
+}

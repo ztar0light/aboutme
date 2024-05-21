@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px) {
+    #title {
+        font-size: 20px;
+    }
+
+    .rectangleText {
+        font-size: 12px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .roundedRect {
+        width: 85%;
+    }
+}
