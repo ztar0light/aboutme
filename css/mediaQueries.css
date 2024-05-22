@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (orientation: portrait) {
     #title {
         font-size: 20px;
     }
@@ -12,6 +12,23 @@
     }
 
     .roundedRect {
-        width: 85%;
+        width: 75%;
+    }
+}
+@media screen and (orientation: landscape) {
+    #title {
+        font-size: 20px;
+    }
+
+    .rectangleText {
+        font-size: 12px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .roundedRect {
+        width: 100%;
     }
 }
