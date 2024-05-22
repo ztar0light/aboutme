@@ -17,15 +17,15 @@
 }
 @media screen and (orientation: landscape) {
     #title {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .rectangleText {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     h1, h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .roundedRect {
