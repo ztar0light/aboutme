@@ -6,6 +6,7 @@
     <title>Ztarlight's Page</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/backButton.css">
     <link rel="stylesheet" type="text/css" href="css/banner.css">
     <link rel="stylesheet" type="text/css" href="css/roundedRectangle.css">
     <link rel="stylesheet" type="text/css" href="css/section.css">
@@ -35,7 +36,7 @@
                     <p class="rectangleText">im just chillin'.</p>
                 </div>
             </div>
-            <div class="line"></div> <!-- Horizontal line -->
+            <div class="line"></div>
             <br>
             <div class="section workingOnSection">
                 <div class="container">
@@ -56,14 +57,13 @@
     <div id="footer">
         <p>This page is a work in progress.</p>
     </div>
-    <!-- JavaScript code -->
     <script>
         function handleBackButtonClick(event) {
-            event.preventDefault(); // Prevent default behavior of link
-            var newTab = window.open('about:blank', '_blank'); // Open default browser page in new tab
-            window.close(); // Close the current tab
+            event.preventDefault();
+            var newTab = window.open('about:blank', '_blank');
+            window.close();
         }
-        document.getElementById("backButtonContainer").addEventListener("click", handleBackButtonClick);
+        document.getElementById("backButton").addEventListener("click", handleBackButtonClick);
     </script>
 </body>
 </html>
