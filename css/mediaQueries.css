@@ -14,6 +14,10 @@
     .roundedRect {
         padding: -30px;
     }
+    
+    .smallTextBox {
+        padding: -30px;
+    }
 }
 @media screen and (orientation: landscape) {
     #title {
