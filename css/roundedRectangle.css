@@ -3,7 +3,7 @@
     background-color: #333;
     border-radius: 25px;
     overflow: hidden;
-    width: 315px; /* Fixed width */
+    width: 300px; /* Fixed width */
     max-width: 300px; /* Ensure width doesn't exceed 300px */
     min-width: 300px; /* Ensure width doesn't go below 300px */
     padding: 10px;
@@ -24,7 +24,7 @@
         left: 0;
         right: 0;
         height: 120px;
-        background-color: #FFA500;
+        background-color: #4a5d73;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
