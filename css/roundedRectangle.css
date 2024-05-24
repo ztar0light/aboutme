@@ -6,7 +6,7 @@
     width: 300px; /* Fixed width */
     max-width: 300px; /* Ensure width doesn't exceed 300px */
     min-width: 300px; /* Ensure width doesn't go below 300px */
-    padding: 10px;
+    padding: 30px;
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
