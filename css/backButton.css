@@ -3,7 +3,6 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    z-index: 3;
 }
 
 #backButton {
@@ -16,7 +15,6 @@
     display: inline-block;
     border: 2px solid #FFA500; /* Add border to make it visible */
     transition: all 0.3s ease;
-    z-index: 3;
 }
 
     #backButton:hover,

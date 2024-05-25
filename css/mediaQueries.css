@@ -12,11 +12,7 @@
     }
 
     .roundedRect {
-        
-    }
-    
-    .smallTextBox {
-        
+        width: 75%;
     }
 }
 @media screen and (orientation: landscape) {
