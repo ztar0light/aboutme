@@ -14,12 +14,16 @@
 }
 
 .halfOpaque {
-    font-size: 14px;
-    color: white;
-    opacity: 0.2;
-    padding: 2px;
     border-radius: 2px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    position: relative;
+    color: gray;
     background-color: #444;
-    text-align: center;
-    z-index: 3; /* Ensures the text is on top */
+    z-index: 3;
+    width: auto; /* Slightly smaller fixed width to fit within roundedRect */
+    height: auto; /* Height adjusts automatically */
 }
