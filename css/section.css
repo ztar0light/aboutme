@@ -15,10 +15,10 @@
 
 .halfOpaque {
     font-size: 14px;
-    color: dimgray;
+    color: gray;
     opacity: 0.2;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 2px;
+    border-radius: 2px;
     background-color: #444;
     text-align: center;
     z-index: 3; /* Ensures the text is on top */
