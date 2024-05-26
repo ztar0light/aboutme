@@ -14,7 +14,8 @@
 }
 
 .halfOpaque {
-    border-radius: 2px;
+    font-size: 8px;
+    border-radius: 15px;
     padding: 1px;
     display: flex;
     flex-direction: column;
