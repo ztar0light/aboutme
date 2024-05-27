@@ -1,7 +1,7 @@
 .section {
     padding-top: 5px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 100%;
     box-sizing: border-box;
     border-radius: 15px;
@@ -14,16 +14,16 @@
 }
 
 .halfOpaque {
-    font-size: 8px;
+    font-size: 14px;
     border-radius: 15px;
-    padding: 1px;
+    padding: -5px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     position: relative;
-    color: gray;
-    background-color: #444;
+    color: dimgray;
+    background-color: #292929;
     z-index: 3;
     width: auto; /* Slightly smaller fixed width to fit within roundedRect */
     height: auto; /* Height adjusts automatically */
