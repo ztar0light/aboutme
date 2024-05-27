@@ -78,15 +78,13 @@
         </div>
     </div>
     <div id="footer">
-        <p>This page is a work in progress.</p>
+        <p style="color:dimgray;"><b>This page is a work in progress.</b></p>
     </div>
-    <script>
-        function handleBackButtonClick(event) {
+    <script>function handleBackButtonClick(event) {
             event.preventDefault();
             var newTab = window.open('about:blank', '_blank');
             window.close();
         }
-        document.getElementById("backButton").addEventListener("click", handleBackButtonClick);
-    </script>
+        document.getElementById("backButton").addEventListener("click", handleBackButtonClick);</script>
 </body>
 </html>
