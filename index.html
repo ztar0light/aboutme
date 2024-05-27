@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ztarlight's Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/backButton.css">
+    <link rel="stylesheet" type="text/css" href="css/roundedRectangle.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="stylesheet" type="text/css" href="css/smallTextBox.css">
+    <link rel="stylesheet" type="text/css" href="css/profilePicture.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+</head>
+<body>
+    <div id="backButtonContainer">
+        <a id="backButton" href="#">Back</a>
+    </div>
+    <div id="contentContainer">
+        <div class="roundedRect" id="roundedRect">
+            <div id="banner1"></div>
+            <div id="profilePicture">
+                <img src="assets/pfp.png" alt="Profile Picture">
+            </div>
+            <div id="title">
+                <h1 style="text-align:center;">Hey, I'm Ztarlight</h1>
+                <div class="halfOpaque">
+                    <p><b>ztar0light on discord</b></p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="section buttonSection">
+                <div class="smallTextBox buttonsTextBox">
+                    <div class="buttonBar">
+                        <a href="https://docs.google.com" class="button googleDocs">Google Docs</a>
+                        <a href="https://sheets.google.com" class="button googleSheets">Google Sheets</a>
+                        <a href="https://slides.google.com" class="button googleSlides">Google Slides</a>
+                        <a href="https://classroom.google.com" class="button googleClassroom">Google Classroom</a>
+                        <p style="color:dimgray;"><strong><b><i>*google app just placeholder</i></b></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="section aboutMeSection">
+                <div class="smallTextBox">
+                    <h2>About me</h2>
+                    <p class="rectangleText">im just chillin'.</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="section workingOnSection">
+                <div class="container">
+                    <div class="smallTextBox">
+                        <h2>What I'm working on</h2>
+                        <p class="rectangleText">This dang website</p>
+                        <ul style="text-align:left;">
+                            <li><del>box to put all this text in</del></li>
+                            <li><del>put in pfp like solo.to</del></li>
+                            <li>social media link buttons</li>
+                            <li>pictures? <i>maybe</i></li>
+                        </ul>
+                        <p class="rectangleText">Drawing anime style</p>
+                        <ul style="text-align:left;">
+                            <li><del>basic head</del></li>
+                            <li>hair stiffness</li>
+                            <li>shading</li>
+                            <li><i>help</i></li>
+                        </ul>
+                        <p class="rectangleText">Typing</p>
+                        <ul style="text-align:left;">
+                            <li><del>qwerty</del></li>
+                            <li>workman</li>
+                            <li>steno</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>This page is a work in progress.</p>
+    </div>
+    <script>
+        function handleBackButtonClick(event) {
+            event.preventDefault();
+            var newTab = window.open('about:blank', '_blank');
+            window.close();
+        }
+        document.getElementById("backButton").addEventListener("click", handleBackButtonClick);
+    </script>
+</body>
+</html>
