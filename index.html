@@ -5,86 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ztarlight's Page</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/general.css">
-    <link rel="stylesheet" type="text/css" href="css/backButton.css">
-    <link rel="stylesheet" type="text/css" href="css/roundedRectangle.css">
-    <link rel="stylesheet" type="text/css" href="css/section.css">
-    <link rel="stylesheet" type="text/css" href="css/smallTextBox.css">
-    <link rel="stylesheet" type="text/css" href="css/profilePicture.css">
-    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div id="backButtonContainer">
-        <a id="backButton" href="#">Back</a>
+    <div id="menuContainer">
+        <div id="menuButton"><b>MENU ☰</b></div>
+        <div id="menuSidebar">
+            <div class="menu-header"><b>MENU</b></div>
+            <div class="menu-item"><a id="backButton" href="#">← Back</a></div>
+            <div class="menu-item"><button id="themeSwitch">⚙ Switch Theme</button></div>
+            <div class="menu-version">V7.2.5-Test</div>
+        </div>
     </div>
+    <div id="leftButton" class="sideButton">‹</div>
+    <div id="rightButton" class="sideButton">›</div>
     <div id="contentContainer">
-        <div class="roundedRect" id="roundedRect">
-            <div id="banner1"></div>
-            <div id="profilePicture">
-                <img src="assets/pfp.png" alt="Profile Picture">
-            </div>
-            <div id="title">
-                <h1 style="text-align:center;">Hey, I'm Ztarlight</h1>
-                <div class="halfOpaque">
-                    <p><b>ztar0light on discord</b></p>
+        <div class="section">
+            <div class="section-content">
+                <div class="banner-container">
+                    <div class="banner tall-banner"></div>
                 </div>
-            </div>
-            <div class="line"></div>
-            <div class="section buttonSection">
-                <div class="smallTextBox buttonsTextBox">
-                    <div class="buttonBar">
-                        <a href="https://docs.google.com" class="button googleDocs">Google Docs</a>
-                        <a href="https://sheets.google.com" class="button googleSheets">Google Sheets</a>
-                        <a href="https://slides.google.com" class="button googleSlides">Google Slides</a>
-                        <a href="https://classroom.google.com" class="button googleClassroom">Google Classroom</a>
-                        <p style="color:dimgray;"><strong><b><i>*google app just placeholder</i></b></strong></p>
+                <div id="profilePicture">
+                    <img src="assets/pfp.png" alt="Profile Picture">
+                </div>
+                <h1>Hey, I'm Ztarlight</h1>
+                    <div class="namecard">
+                        <p><b>ztar0light on discord</b></p>
                     </div>
+                <hr />
+                <div class="buttonBar">
+                    <a href="https://docs.google.com" class="button">Google Docs</a>
+                    <a href="https://sheets.google.com" class="button">Google Sheets</a>
+                    <a href="https://slides.google.com" class="button">Google Slides</a>
+                    <a href="https://classroom.google.com" class="button">Google Classroom</a>
+                    <p class="highlighted-text"><strong>*google apps just placeholders</strong></p>
                 </div>
             </div>
-            <div class="section aboutMeSection">
-                <div class="smallTextBox">
-                    <h2>About me</h2>
-                    <p class="rectangleText">im just chillin'.</p>
+        </div>
+        <div class="section">
+            <div class="section-content">
+                <div class="banner-container">
+                    <div class="banner short-banner"></div>
                 </div>
+                <h2>About me</h2>
+                <hr />
+                <p>im just chillin'.</p>
+                <p>placeholder text</p>
+                <p>placeholder text</p>
+                <p>placeholder text</p>
+                <p>placeholder text</p>
+                <p>placeholder text</p>
+                <p>placeholder text</p>
+                <p>placeholder text</p>
             </div>
-            <div class="line"></div>
-            <div class="section workingOnSection">
-                <div class="container">
-                    <div class="smallTextBox">
-                        <h2>What I'm working on</h2>
-                        <p class="rectangleText">This dang website</p>
-                        <ul style="text-align:left;">
-                            <li><del>box to put all this text in</del></li>
-                            <li><del>put in pfp like solo.to</del></li>
-                            <li>social media link buttons</li>
-                            <li>pictures? <i>maybe</i></li>
-                        </ul>
-                        <p class="rectangleText">Drawing anime style</p>
-                        <ul style="text-align:left;">
-                            <li><del>basic head</del></li>
-                            <li>hair stiffness</li>
-                            <li>shading</li>
-                            <li><i>help</i></li>
-                        </ul>
-                        <p class="rectangleText">Typing</p>
-                        <ul style="text-align:left;">
-                            <li><del>qwerty</del></li>
-                            <li>workman</li>
-                            <li>steno</li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="section">
+            <div class="section-content">
+                <div class="banner-container">
+                    <div class="banner short-banner"></div>
                 </div>
+                <h2>What I'm working on</h2>
+                <hr />
+                <p>This dang website</p>
+                <ul>
+                    <li><del>box to put all this text in</del></li>
+                    <li><del>put in pfp like solo.to</del></li>
+                    <li>social media link buttons</li>
+                    <li>pictures? <i>maybe</i></li>
+                </ul>
+                <p>Drawing anime style</p>
+                <ul>
+                    <li><del>basic head</del></li>
+                    <li>hair stiffness</li>
+                    <li>shading</li>
+                    <li><i>help</i></li>
+                </ul>
+                <p>Typing</p>
+                <ul>
+                    <li><del>qwerty</del></li>
+                    <li>workman</li>
+                    <li>steno</li>
+                </ul>
             </div>
         </div>
     </div>
     <div id="footer">
-        <p style="color:dimgray;"><b>This page is a work in progress.</b></p>
+        <p class="highlighted-text"><b>This page is a work in progress.</b></p>
     </div>
-    <script>function handleBackButtonClick(event) {
+    <script>
+        document.getElementById("backButton").addEventListener("click", function (event) {
             event.preventDefault();
-            var newTab = window.open('about:blank', '_blank');
-            window.close();
+            window.history.back();
+        });
+
+        const themeSwitch = document.getElementById('themeSwitch');
+        const body = document.body;
+
+        function setTheme(theme) {
+            body.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
         }
-        document.getElementById("backButton").addEventListener("click", handleBackButtonClick);</script>
+
+        themeSwitch.addEventListener('click', function () {
+            const currentTheme = body.getAttribute('data-theme');
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const savedTheme = localStorage.getItem('theme') || (userPrefersDark ? 'dark' : 'light');
+        setTheme(savedTheme);
+
+        const menuButton = document.getElementById('menuButton');
+        const menuSidebar = document.getElementById('menuSidebar');
+        const contentContainer = document.getElementById('contentContainer');
+        const leftButton = document.getElementById('leftButton');
+        const rightButton = document.getElementById('rightButton');
+
+        menuButton.addEventListener('click', function () {
+            menuSidebar.classList.toggle('active');
+            contentContainer.classList.toggle('dimmed');
+            menuButton.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!menuContainer.contains(event.target) && !menuButton.contains(event.target)) {
+                menuSidebar.classList.remove('active');
+                contentContainer.classList.remove('dimmed');
+                menuButton.classList.remove('active');
+            }
+        });
+
+        const sections = document.querySelectorAll('.section');
+        let currentIndex = 0;
+
+        function updateButtons() {
+            if (currentIndex === 0) {
+                leftButton.classList.add('disabled');
+            } else {
+                leftButton.classList.remove('disabled');
+            }
+
+            if (currentIndex === sections.length - 1) {
+                rightButton.classList.add('disabled');
+            } else {
+                rightButton.classList.remove('disabled');
+            }
+        }
+
+        leftButton.addEventListener('click', function () {
+            if (currentIndex > 0) {
+                currentIndex--;
+                sections[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                updateButtons();
+            }
+        });
+
+        rightButton.addEventListener('click', function () {
+            if (currentIndex < sections.length - 1) {
+                currentIndex++;
+                sections[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                updateButtons();
+            }
+        });
+
+        updateButtons();
+    </script>
 </body>
 </html>
