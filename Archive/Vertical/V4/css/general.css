@@ -1,0 +1,33 @@
+/* general.css */
+
+/* General Styles */
+body {
+    background-color: #4a5d73;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Banner */
+#banner1 {
+    height: 40px;
+    width: 100%;
+    background-image: linear-gradient(to top, #FFA500, #FFA500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

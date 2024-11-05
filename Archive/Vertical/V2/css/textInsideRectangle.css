@@ -1,0 +1,7 @@
+.rectangleText {
+    font-size: 14px;
+    color: grey;
+    padding: 10px;
+    border-radius: 10px; /* Slightly rounded corners */
+    background-color: #444;
+}

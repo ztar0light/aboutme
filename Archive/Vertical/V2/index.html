@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ztarlight's Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Link to separate CSS files -->
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/backButton.css">
+    <link rel="stylesheet" type="text/css" href="css/backButtonContainer.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <link rel="stylesheet" type="text/css" href="css/container.css">
+    <link rel="stylesheet" type="text/css" href="css/roundedRectangle.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="stylesheet" type="text/css" href="css/textInsideRectangle.css">
+    <link rel="stylesheet" type="text/css" href="css/profilePicture.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+</head>
+<body>
+    <div id="backButtonContainer">
+        <a id="backButton" href="#">Back</a>
+    </div>
+    <div id="contentContainer">
+        <div class="roundedRect" id="roundedRect">
+            <div id="banner1"></div>
+            <div id="profilePicture">
+                <img src="assets/pfp.png" alt="Profile Picture">
+            </div>
+            <div id="title">
+                <h1>Hey, I'm Ztarlight</h1>
+                <p>ztar0light on discord</p>
+            </div>
+            <div class="section aboutMeSection">
+                <h2>About me</h2>
+                <div class="smallTextBox">
+                    <p class="rectangleText">I am a gamer who does touch grass.</p>
+                </div>
+            </div>
+            <div class="line"></div> <!-- Horizontal line -->
+            <br>
+            <div class="section workingOnSection">
+                <div class="container">
+                    <div class="smallTextBox">
+                        <h2>What I'm working on</h2>
+                        <p class="rectangleText">I'm working on this website right now.</p>
+                        <ul id="liContainer">
+                            <li>box to put all this text in</li>
+                            <li>social media link buttons</li>
+                            <li>pictures? maybe</li>
+                            <li>put in pfp like solo.to</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>This page is a work in progress.</p>
+    </div>
+    <!-- JavaScript code -->
+    <script>
+        function handleBackButtonClick(event) {
+            event.preventDefault(); // Prevent default behavior of link
+            var newTab = window.open('about:blank', '_blank'); // Open default browser page in new tab
+            window.close(); // Close the current tab
+        }
+        document.getElementById("backButtonContainer").addEventListener("click", handleBackButtonClick);
+
+        // Get the container and overlay elements
+        const container = document.getElementById('containerOverlay');
+        const roundedRect = document.getElementById('roundedRect');
+        // Update the height of the rounded rectangle based on the overlay's height
+        roundedRect.style.height = container.offsetHeight + 'px';
+    </script>
+</body>
+</html>

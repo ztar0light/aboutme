@@ -1,0 +1,9 @@
+/* Banner styles */
+#banner1 {
+    height: 60px; /* Adjusted height of the banner */
+    width: 100%; /* Full width */
+    background-image: linear-gradient(to top, #FFA500, #FFA500); /* Orange gradient background */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}

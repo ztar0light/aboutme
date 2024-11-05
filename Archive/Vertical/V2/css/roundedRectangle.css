@@ -1,0 +1,29 @@
+.roundedRect {
+    background-color: #333;
+    border-radius: 25px; /* More rounded edges */
+    overflow: hidden;
+    width: 65%;
+    max-width: 65vh;
+    padding: 10px; /* Slightly increased padding */
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    height: auto; /* Set height to auto */
+    min-height: max-content; /* Adjust min-height based on content */
+}
+
+    .roundedRect::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 120px; /* Increased height for the banner */
+        background-color: #FFA500;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }

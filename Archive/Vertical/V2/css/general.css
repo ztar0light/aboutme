@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #536d84; /* Dull blue background color */
+    color: #FFFFFF; /* White text color */
+    font-family: Arial, sans-serif; /* Specify font family */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll; /* Ensure the page is scrollable vertically */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+    body::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    }
+
+h1, h2 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 5px 0;
+}
